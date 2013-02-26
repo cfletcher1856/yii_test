@@ -20,10 +20,14 @@
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <ul class="nav admin-nav">
+                <ul class="nav">
                     <li><?php echo CHtml::link('One', Yii::app()->homeUrl); ?></li>
                     <li><?php echo CHtml::link('Two', Yii::app()->homeUrl); ?></li>
                     <li><?php echo CHtml::link('Three', Yii::app()->homeUrl); ?></li>
+                </ul>
+                <ul class="nav pull-right">
+                    <li class="divider-vertical"></li>
+                    <li class="pull-right"><?php echo CHtml::link('Admin', array('//admin')); ?></li>
                 </ul>
             </div>
         </div>

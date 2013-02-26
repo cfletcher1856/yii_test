@@ -30,20 +30,4 @@ class AdminController extends CController
 
         public $page_header;
         public $sub_header;
-
-        /**
-         * The filter method for 'UserGroupsAccessControl' filter.
-         * This filter is a wrapper of {@link UserGroupsAccessControl}.
-         * To use this filter, you must override {@link accessRules} method.
-         * @param CFilterChain $filterChain the filter chain that the filter is on.
-         */
-        public function filterUserGroupsAccessControl($filterChain)
-        {
-                Yii::import('userGroups.models.UserGroupsUser');
-                Yii::import('userGroups.models.UserGroupsConfiguration');
-                Yii::import('userGroups.components.UserGroupsAccessControl');
-                $filter=new UserGroupsAccessControl;
-                $filter->setRules($this->accessRules());
-                $filter->filter($filterChain);
-        }
 }

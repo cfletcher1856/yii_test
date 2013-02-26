@@ -25,6 +25,10 @@
                     <li><?php echo CHtml::link('Two', Yii::app()->homeUrl); ?></li>
                     <li><?php echo CHtml::link('Three', Yii::app()->homeUrl); ?></li>
                 </ul>
+                <ul class="nav pull-right">
+                    <li class="divider-vertical"></li>
+                    <li class="pull-right"><?php echo CHtml::link('Logout', array('//site/logout')); ?></li>
+                </ul>
             </div>
         </div>
     </div>

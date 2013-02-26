@@ -19,10 +19,10 @@
 </head>
 <body>
 
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
             <div class="container">
-                <ul class="nav admin-nav">
+                <ul class="nav">
                     <li><?php echo CHtml::link('One', Yii::app()->homeUrl); ?></li>
                     <li><?php echo CHtml::link('Two', Yii::app()->homeUrl); ?></li>
                     <li><?php echo CHtml::link('Three', Yii::app()->homeUrl); ?></li>

@@ -1,7 +1,14 @@
 <?php
-/* @var $this SiteController */
+    /* @var $this SiteController */
 
-$this->pageTitle=Yii::app()->name;
+    $this->pageTitle=Yii::app()->name;
+    $this->page_header = "Testing Header";
+    $this->sub_header = "Boo-Yah";
+    $this->breadcrumbs=array(
+        "One" => array("//admin"),
+        "Two" => array("//userGroups/user/facilitator"),
+        "Three"
+    );
 ?>
 
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>

@@ -21,7 +21,7 @@
         <div class="navbar-inner">
             <div class="container">
                 <ul class="nav">
-                    <li><?php echo CHtml::link('One', Yii::app()->homeUrl); ?></li>
+                    <li><?php echo CHtml::link('Players', array('//admin/players')); ?></li>
                     <li><?php echo CHtml::link('Two', Yii::app()->homeUrl); ?></li>
                     <li><?php echo CHtml::link('Three', Yii::app()->homeUrl); ?></li>
                 </ul>
@@ -56,10 +56,28 @@
                 </div>
             </div>
 
-
             <div class="row">
-                <div class="span12">
-                    <?php echo $content ?>
+                <div class="span3">
+                    <div id="sidebar">
+                    <?php
+                        $this->beginWidget('zii.widgets.CPortlet', array(
+                            'title'=>'Actions',
+                        ));
+
+                        $this->widget('zii.widgets.CMenu', array(
+                            'items'=>$this->menu,
+                            'htmlOptions'=>array('class'=>'operations'),
+                        ));
+
+                        $this->endWidget();
+                    ?>
+                    </div><!-- sidebar -->
+                </div>
+
+                <div class="span9">
+                    <div id="content">
+                        <?php echo $content; ?>
+                    </div>
                 </div>
             </div>
         </div>

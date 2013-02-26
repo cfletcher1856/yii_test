@@ -95,4 +95,8 @@ class Players extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+	public function full_name(){
+		return $this->f_name . " " . $this->l_name;
+	}
 }

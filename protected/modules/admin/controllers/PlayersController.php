@@ -65,7 +65,7 @@ class PlayersController extends AdminController
 		{
 			$model->attributes=$_POST['Players'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('create',array(
@@ -89,7 +89,7 @@ class PlayersController extends AdminController
 		{
 			$model->attributes=$_POST['Players'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('update',array(

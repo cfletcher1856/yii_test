@@ -1,5 +1,72 @@
 @import "../bootstrap/less/bootstrap.less";
 
+/* Override some defaults */
+html, body {
+  background-color: #eee;
+  background-image: url('/images/cross_scratches.png');
+}
+
+//Showing vertical scrolling so the page doesn't hop when the content passes the fold
+html {
+  -ms-overflow-y: scroll;
+  overflow-y: scroll;
+}
+
 body {
   padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
 }
+
+.navbar .brand {
+  padding: 4px 20px;
+}
+
+.container > div.footer p {
+  text-align: center; /* center align it with the container */
+}
+
+/* The white background content wrapper */
+.container > .content {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+/* Page header tweaks */
+.page-header {
+  background-color: #f5f5f5;
+  padding: 20px 20px 10px;
+  margin: -20px -20px 20px;
+}
+
+.topbar .btn {
+  border: 0;
+}
+
+.top-button-bar{
+  margin-bottom: 18px;
+}
+
+.center{
+  text-align: center;
+}
+
+.footermenu{
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-left: 0;
+  ul{
+    li{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.clear{ clear: both; }

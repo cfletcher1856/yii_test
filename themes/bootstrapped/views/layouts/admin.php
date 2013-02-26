@@ -14,8 +14,6 @@
             Yii::app()->less->register();
         }
     ?>
-
-    <link rel="shortcut icon" href="{% static "images/favicon.ico" %}">
 </head>
 <body>
 
@@ -62,5 +60,12 @@
             </div>
         </div>
     </div>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/1.0.1/lodash.min.js"></script>
+    <script type="text/javascript">
+        // Tell jQuery to never cache ajax requests
+        $.ajaxSetup({ cache: false });
+    </script>
+
 </body>
 </html>
